@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "__INSTANCE_ID__",
+  "name": "__INSTANCE_NAME__",
+  "paths": {
+    "dataRoot": "__DATA_ROOT__",
+    "runtimeRoot": "__RUNTIME_ROOT__",
+    "worktreeRoot": "__WORKTREE_ROOT__"
+  },
+  "agents": ["liv", "max"],
+  "openclaw": {
+    "version": "2026.9.8",
+    "config": "openclaw/config.patch.json5",
+    "plugins": []
+  },
+  "runtimeProfiles": "runtime/profiles.json",
+  "channels": ["channels/slack.json"],
+  "surfaces": ["surfaces/domain.json"],
+  "services": [],
+  "secrets": {
+    "provider": "doppler",
+    "bootstrap": "external"
+  }
+}
